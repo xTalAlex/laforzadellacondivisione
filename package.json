@@ -1,17 +1,11 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/app.css --minify",
+    "watch": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/app.css --watch",
+    "prod": "html-import-partials ./pages/index.html -o ./ && html-import-partials ./pages/servizi.html -o ./ && npm run build"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "html-import-partials": "^1.0.1",
+    "tailwindcss": "^3.0.24"
   }
 }
