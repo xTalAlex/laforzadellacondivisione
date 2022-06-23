@@ -1,6 +1,10 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*
 	Dopetrope by HTML5 UP
 	html5up.net | @ajlkn
@@ -2175,7 +2179,7 @@ input, select, textarea {
 	#banner {
 		background: #CCE8F4 url("../img/banner.jpg");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
