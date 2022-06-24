@@ -1,5 +1,7 @@
 module.exports = {
 
+    mode: 'jit',
+    
     content: [
         "./*.html"
     ],
@@ -9,6 +11,8 @@ module.exports = {
         extend: {
             
             colors: {
+                "thunder-900": "#252122",
+
                 "green-haze-600": "#00BD59",
                 "green-haze-700": "#009446",
                 "green-haze-800": "#016A33",

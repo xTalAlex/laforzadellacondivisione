@@ -2,7 +2,7 @@
   "scripts": {
     "build": "npx tailwindcss -i ./css/main.css -o ./css/app.css --minify",
     "watch": "npx tailwindcss -i ./css/main.css -o ./css/app.css --watch",
-    "prod": "html-import-partials ./pages/index.html -o ./ && html-import-partials ./pages/servizi.html -o ./ && npm run build"
+    "prod": "html-import-partials ./pages/donazioni.html -o ./ && html-import-partials ./pages/index.html -o ./ && html-import-partials ./pages/progetti.html -o ./ && html-import-partials ./pages/adozioni.html -o ./ && npm run build"
   },
   "devDependencies": {
     "html-import-partials": "^1.0.1",

@@ -1,0 +1,39 @@
+<!-- Logo -->
+<h1><a href="index.html">A força da partilha</a></h1>
+
+<!-- Nav -->
+<nav id="nav"
+    x-data="{
+        page : null,
+    }"
+    x-init="
+        pathElements = (window.location.pathname).split('/');
+        page = (pathElements[pathElements.length - 1]).split('.')[0];
+    "   
+>
+    <ul>
+        <li :class="{ 'current' : page=='index' }"><a href="index.html">Home</a></li>
+        <li :class="{ 'current' : page=='chi-siamo' }"><a href="left-sidebar.html">Chi Siamo</a></li>
+        <li :class="{ 'current' : page=='' }">
+            <a href="#">Dropdown</a>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Magna phasellus</a></li>
+                <li><a href="#">Etiam dolore nisl</a></li>
+                <li>
+                    <a href="#">Phasellus consequat</a>
+                    <ul>
+                        <li><a href="#">Magna phasellus</a></li>
+                        <li><a href="#">Etiam dolore nisl</a></li>
+                        <li><a href="#">Veroeros feugiat</a></li>
+                        <li><a href="#">Nisl sed aliquam</a></li>
+                        <li><a href="#">Dolore adipiscing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Veroeros feugiat</a></li>
+            </ul>
+        </li>		
+        <li :class="{ 'current' : page=='' }"><a href="left-sidebar.html">Left Sidebar</a></li>
+        <li :class="{ 'current' : page=='' }"><a href="no-sidebar.html">No Sidebar</a></li>
+    </ul>
+</nav>
