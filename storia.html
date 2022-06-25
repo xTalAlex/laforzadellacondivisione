@@ -1,4 +1,77 @@
-<section id="footer">
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html style="scroll-behavior: smooth;">
+
+	<head>
+        <title>A força da partilha | La nostra storia </title>
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="css/app.css" />
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+
+    <body class="homepage is-preload">
+        <div id="page-wrapper">
+
+            <section id="header">
+
+                <!-- Logo -->
+<h1><a href="index.html">A força da partilha</a></h1>
+
+<!-- Nav -->
+<nav id="nav"
+    x-data="{
+        page : null,
+    }"
+    x-init="
+        pathElements = (window.location.pathname).split('/');
+        page = (pathElements[pathElements.length - 1]).split('.')[0];
+    "   
+>
+    <ul>
+        <li :class="{ 'current' : page=='index' || page=='donazioni' }"><a href="index.html">Home</a></li>
+        <li :class="{ 'current' : page=='chi-siamo'|| page=='progetti' || page=='adozioni' || page=='storia' }">
+            <a href="chi-siamo.html">Chi Siamo</a>
+            <ul>
+                <li>
+                    <a href="progetti.html">I nostri progetti</a>
+                    <ul>
+                        <li><a href="progetti.html#brasile">Brasile</a></li>
+                        <li><a href="progetti.html#italia">Italia</a></li>
+                        <li><a href="progetti.html#kenya">Kenya</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="adozioni.html">Adozioni</a>
+                    <ul>
+                        <li><a href="adozioni.html#agata-smeralda">Agata Smeralda</a></li>
+                        <li><a href="adozioni.html#mehala">Mehala</a></li>
+                    </ul>
+                </li>
+                <li><a href="storia.html">La nostra storia</a></li>
+            </ul>
+        </li>
+        <li :class="{ 'current' : page=='note-di-condivisione' }"><a href="note-di-condivisione.html">Note di Condivisione</a></li>
+    </ul>
+</nav>
+
+
+            </section>
+
+            <section id="main">
+                <div class="container">
+                                    
+                </div>
+            </section>
+
+            <section id="footer">
     <div class="container">
         <div class="row">
 
@@ -132,3 +205,17 @@
         </div>
     </div>
 </section>
+            
+        </div>
+
+        
+    </body>
+
+    <script src="js/jquery.min.js"></script>
+<script src="js/jquery.dropotron.min.js"></script>
+<script src="js/browser.min.js"></script>
+<script src="js/breakpoints.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+
+</html>

@@ -4,12 +4,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html style="scroll-behavior: smooth;">
 
 	<head>
         <title>A força da partilha | Progetti </title>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="manifest" href="/site.webmanifest">
 
 <link rel="stylesheet" href="css/app.css" />
 
@@ -35,29 +36,29 @@
     "   
 >
     <ul>
-        <li :class="{ 'current' : page=='index' }"><a href="index.html">Home</a></li>
-        <li :class="{ 'current' : page=='chi-siamo' }"><a href="left-sidebar.html">Chi Siamo</a></li>
-        <li :class="{ 'current' : page=='' }">
-            <a href="#">Dropdown</a>
+        <li :class="{ 'current' : page=='index' || page=='donazioni' }"><a href="index.html">Home</a></li>
+        <li :class="{ 'current' : page=='chi-siamo'|| page=='progetti' || page=='adozioni' || page=='storia' }">
+            <a href="chi-siamo.html">Chi Siamo</a>
             <ul>
-                <li><a href="#">Lorem ipsum dolor</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam dolore nisl</a></li>
                 <li>
-                    <a href="#">Phasellus consequat</a>
+                    <a href="progetti.html">I nostri progetti</a>
                     <ul>
-                        <li><a href="#">Magna phasellus</a></li>
-                        <li><a href="#">Etiam dolore nisl</a></li>
-                        <li><a href="#">Veroeros feugiat</a></li>
-                        <li><a href="#">Nisl sed aliquam</a></li>
-                        <li><a href="#">Dolore adipiscing</a></li>
+                        <li><a href="progetti.html#brasile">Brasile</a></li>
+                        <li><a href="progetti.html#italia">Italia</a></li>
+                        <li><a href="progetti.html#kenya">Kenya</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Veroeros feugiat</a></li>
+                <li>
+                    <a href="adozioni.html">Adozioni</a>
+                    <ul>
+                        <li><a href="adozioni.html#agata-smeralda">Agata Smeralda</a></li>
+                        <li><a href="adozioni.html#mehala">Mehala</a></li>
+                    </ul>
+                </li>
+                <li><a href="storia.html">La nostra storia</a></li>
             </ul>
-        </li>		
-        <li :class="{ 'current' : page=='' }"><a href="left-sidebar.html">Left Sidebar</a></li>
-        <li :class="{ 'current' : page=='' }"><a href="no-sidebar.html">No Sidebar</a></li>
+        </li>
+        <li :class="{ 'current' : page=='note-di-condivisione' }"><a href="note-di-condivisione.html">Note di Condivisione</a></li>
     </ul>
 </nav>
 
@@ -66,7 +67,325 @@
 
             <section id="main">
                 <div class="container">
-                                    
+
+                    <section class="">
+                        <div class="mb-12 text-center">
+                            <h1 class="text-2xl font-medium text-center">Cosa facciamo</h1>
+                            <!-- <p class="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p> -->
+                        </div>
+                        <div class="container px-5 py-3 mx-auto">
+                            <div class="flex flex-wrap -mx-2 lg:w-4/5 sm:mx-auto sm:mb-2">
+                                <div class="w-full p-2 sm:w-1/2">
+                                    <div class="flex items-center h-full p-4 bg-gray-100 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="flex-shrink-0 w-6 h-6 mr-4 text-green-haze-700" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium title-font">Adozioni a distanza</span>
+                                    </div>
+                                </div>
+                                <div class="w-full p-2 sm:w-1/2">
+                                    <div class="flex items-center h-full p-4 bg-gray-100 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="flex-shrink-0 w-6 h-6 mr-4 text-green-haze-700" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium title-font">Educazione</span>
+                                    </div>
+                                </div>
+                                <div class="w-full p-2 sm:w-1/2">
+                                    <div class="flex items-center h-full p-4 bg-gray-100 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="flex-shrink-0 w-6 h-6 mr-4 text-green-haze-700" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium title-font">Corsi di formazione professionale e opportunità di lavoro</span>
+                                    </div>
+                                </div>
+                                <div class="w-full p-2 sm:w-1/2">
+                                    <div class="flex items-center h-full p-4 bg-gray-100 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="flex-shrink-0 w-6 h-6 mr-4 text-green-haze-700" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium title-font">Sostegno a orfani e bambini vulnerabii</span>
+                                    </div>
+                                </div>
+                                <div class="w-full p-2 sm:w-1/2">
+                                    <div class="flex items-center h-full p-4 bg-gray-100 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="flex-shrink-0 w-6 h-6 mr-4 text-green-haze-700" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium title-font">Sostegno famiglie povere
+                                    </span>
+                                    </div>
+                                </div>
+
+                                <div class="w-full p-2 sm:w-1/2">
+                                    <div class="flex items-center h-full p-4 bg-gray-100 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="flex-shrink-0 w-6 h-6 mr-4 text-green-haze-700" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium title-font">Case accoglienza
+                                    </span>
+                                    </div>
+                                </div>
+
+                                <div class="w-full p-2 sm:w-1/2">
+                                    <div class="flex items-center h-full p-4 bg-gray-100 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="flex-shrink-0 w-6 h-6 mr-4 text-green-haze-700" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium title-font">Case-alloggio per disabili
+                                    </span>
+                                    </div>
+                                </div>
+
+                                <div class="w-full p-2 sm:w-1/2">
+                                    <div class="flex items-center h-full p-4 bg-gray-100 rounded">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="flex-shrink-0 w-6 h-6 mr-4 text-green-haze-700" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                    <span class="font-medium title-font">Oratori
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+
+                    <header class="major" id="brasile">
+    <h2>Brasile</h2>
+</header>
+
+<section class="text-gray-600 body-font">
+    <div class="container flex flex-wrap px-5 pb-12 mx-auto">
+
+      <div class="w-full mb-10 overflow-hidden rounded-lg lg:w-1/2 lg:mb-0">
+        <img alt="feature" class="object-cover object-center w-full h-full" src="img/brasile_boys.jpg">
+      </div>
+
+      <div class="flex flex-col flex-wrap -mb-10 text-center lg:py-6 lg:w-1/2 lg:pl-12 lg:text-left">
+
+        <div class="flex flex-col items-center mb-10 lg:items-start">
+          <div class="flex-grow">
+            <h2 class="mb-3 text-lg font-medium text-gray-900 title-font">Comunità di Mata Escura e Calabetão (Salvador de Bahia)</h2>
+            <p class="mb-0 text-base leading-relaxed">
+                Dove operano tre Suore Missionarie di Gesù Redentore (suor Claudia Strada, suor Raffaella Corvino e suor Adele Pezone), soprattutto nell'impegno di accoglienza e di recupero dei "meninos de rua" (i bambini e i ragazzi di strada abbandonati), attraverso il "Centro do menor João Paulo II - Artesão da paz", gli asili e le scuole (realtà raccolte nell'associazione ACOPAMEC) nelle varie 'favelas' e la pastorale carceraria.
+            </p>
+            <a href="https://www.acopamec.org.br" target="_blank" class="inline-flex items-center mt-3">ACOPAMEC
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center mb-10 lg:items-start">
+          <div class="flex-grow">
+            <h2 class="mb-3 text-lg font-medium text-gray-900 title-font">"Comunità Emmaus" di Recife (Pernambuco)</h2>
+            <p class="mb-0 text-base leading-relaxed">
+                Fondata nell'agosto '96 dall'Abbè Pierre e dal 'vescovo dei poveri', dom Hélder Câmara, allo scopo di 'servire per primo il più sofferente'  è affidata alla responsabilità di Luis Tenderini, che da una speranza di vita e di lavoro ad una trentina di "trapeiros" (cenciaioli) attraverso la raccolta e il riciclaggio di materiale usato.
+            </p>
+            <a href="https://www.emmaus-international.org/en/who-are-we/emmaus-around-the-world/the-americas/brazil/recife.html" target="_blank" class="inline-flex items-center mt-3">EMMAUS
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center mb-10 lg:items-start">
+          <div class="flex-grow">
+            <h2 class="mb-3 text-lg font-medium text-gray-900 title-font">Missione di Poxoréu (Mato Grosso)</h2>
+            <p class="mb-0 text-base leading-relaxed">
+                Del salesiano Padre Pedro Melesi e della sorella suor Angela, recentemente scomparsa, in particolare l'"Hospital e Maternidade São João Batista", aperto a tutti, soprattutto ai più poveri e agli 'indios', la "Casa Lar Laura Vicuña" per l'accoglienza di bambini abbandonati e senza famiglia e il progetto di adozione a distanza
+            </p>
+            <a href="https://www.hmsjbpoxoreu.com.br" target="_blank" class="inline-flex items-center mt-3">HMSJB
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center mb-10 lg:items-start">
+            <div class="flex-grow">
+              <h2 class="mb-3 text-lg font-medium text-gray-900 title-font">"Pastoral do menor" di Alagoinhas (Bahia)</h2>
+              <p class="mb-0 text-base leading-relaxed">
+                Una cittadina all'interno dello stato della Bahia, dove opera Antonio Nozza, bergamasco doc, in Brasile da più di 30 anni, attualmente responsabile di una casa-famiglia che accoglie bambine e bambini in stato di abbandono o di grave disagio familiare e sociale
+              </p>
+              <a href="https://www.pamadealagoinhas.org.br" target="_blank" class="inline-flex items-center">Pastoral do Menor de Alagoinhas
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col flex-wrap mt-10 -mb-10 text-center lg:py-6 lg:pl-12 lg:text-left">
+
+        <h3 class="mb-8">Progetti seguiti in passato</h3>
+
+        <div class="flex flex-col items-center mb-10 lg:items-start">
+            <div class="flex-grow">
+                <h2 class="mb-3 text-lg font-medium text-gray-900 title-font">Associazione "A força da partilha abraça a causa indigena" di Recife (Pernambuco)</h2>
+                <p class="mb-0 text-base leading-relaxed">
+                    Nata nel 2006 su iniziativa di Carlo Sarti e in stretto contatto con la nostra Associazione, per sostenere alcune iniziative di salvaguardia e di sviluppo di due povere tribù di "indios" del Pernambuco, i Fulni-ô e gli Xucurù.
+                </p>
+            </div>
+        </div>
+  
+        <div class="flex flex-col items-center mb-10 lg:items-start">
+            <div class="flex-grow">
+                <h2 class="mb-3 text-lg font-medium text-gray-900 title-font">"Fondazione Franco Gilberti" (Salvador de Bahia)</h2>
+                <p class="mb-0 text-base leading-relaxed">
+                    Presente con il Centro di accoglienza dei "meninos de rua" in città e la Fazenda "A partilha" all’interno della Bahia.
+                </p>
+                <a href="https://www.fundacaofrancogilberti.org" target="_blank" class="inline-flex items-center mt-3">Fundação Franco Gilberti
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+                </a>
+            </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+                    <header class="major" id="italia">
+    <h2>Italia</h2>
+</header>
+
+<section class="text-gray-600 body-font">
+
+    <div class="container flex flex-col px-5 py-12 mx-auto">
+        <div class="mx-auto lg:w-4/6">
+            <div class="h-64 overflow-hidden rounded-lg">
+            <img alt="content" class="object-cover object-center w-full h-full" src="img/casa_amica.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="w-full mx-auto">
+        <div class="flex flex-col mt-10 sm:flex-row">
+          <div class="text-center sm:w-1/3 sm:pr-8 sm:py-8">
+            <div class="inline-flex items-center justify-center w-full h-full text-gray-400 bg-gray-200 rounded-full">
+              <img class="object-cover w-full h-full" src="img/rosa_blu.jpg"/>
+            </div>
+          </div>
+          <div class="pt-4 mt-4 text-center border-t border-gray-200 sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 sm:mt-0 sm:text-left">
+            <p class="text-base leading-relaxed">
+                L'associazione ha sempre sostenuto realtà locali come la Casa alloggio per disabili 
+                <a href="https://www.granaio.org/" target="_blank">"IL GRANAIO"</a> di Paderno d'Adda (LC)
+            </p>
+            <p>
+                <ul class="text-base leading-relaxed">
+                    Progetti seguiti in passato
+                    <li>
+                        <a href="http://www.oratoriosanluigi.it/" target="_blank">Oratorio</a> di Cernusco Lomb. (LC)
+                    </li>
+                    <li>
+                        Coop.Soc. di lavoro per disabili <a href="https://www.cooperativalarosablu.org/" target="_blank">"LA ROSA BLU"</a> di Ronco Br. (MB), "INCONTRO" di Maresso (LC) e <a href="http://www.casaamicamerate.it/">"CASA AMICA"</a> a Merate (LC)
+                    </li>
+                    <li>
+                        La casa di accoglienza <a href="http://www.comune.osnago.lc.it/territorio/strutture-e-servizi-associativi/associazioni/il-pellicano/" target="_blank">"LA LOCANDA del SAMARITANO"</a> di Osnago (LC)
+                    </li>
+                </ul>
+            </p>
+          </div>
+        </div>
+    </div>
+</section>
+
+                    <header class="major" id="kenya">
+    <h2>Kenya</h2>
+</header>
+
+<section class="text-gray-600 body-font">
+
+    <div class="container flex flex-wrap px-5 pt-12 pb-6 mx-auto">
+
+        <div class="w-full mb-10 overflow-hidden rounded-lg lg:w-1/2 lg:mb-0">
+         <img alt="feature" class="object-cover object-center w-full h-full" src="img/kenya1.jpg">
+        </div>
+
+        <div class="flex flex-col flex-wrap -mb-10 text-center lg:py-6 lg:w-1/2 lg:pl-12 lg:text-left">
+            <div class="flex flex-col items-center mb-10 lg:items-start">
+                <div class="flex-grow">
+                    <h1 class="mb-3 text-xl font-medium text-gray-900 title-font">Progetto Sololo</h1>
+                    <h2 class="mb-3 text-lg font-medium text-gray-900 title-font">Nord del Kenya, sul confine etiope</h2>
+                    <p class="text-base leading-relaxed">
+                        Il Progetto si prefigge di migliorare la condizione di vita dei minori orfani e/o svantaggiati (vulnerables) di Sololo, della tribu' Borana, in particolare di quelli con genitori deceduti per HIV/AIDS.
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        Vuole garantire il soddisfacimento dei bisogni fondamentali (nutrimento, cure mediche, educazione primaria) dei minori orfani e svantaggiati di Sololo, mantenendoli all’interno della “famiglia nativa” o, in mancanza, all’interno della “famiglia allargata” dei parenti. Prevede il costante monitoraggio della crescita fisica e psichica del bambino e fornisce, in caso di necessita', accoglienza (inizialmente prevista per non oltre 20 bambini) in una “famiglia artificiale” all’interno dell’Obbijtu Children Home, un villaggio aperto ed integrato nella comunita' e cultura locale.
+                    </p>
+                    <a href="https://www.sololo.eu" target="_blank" class="inline-flex items-center mt-3">Sololo
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+    <div class="container flex flex-wrap px-5 mx-auto">
+        <div class="flex flex-col flex-wrap -mb-10 text-center lg:py-6 lg:pl-12 lg:text-left">
+            <div class="flex flex-col items-center mb-10 lg:items-start">
+                <div class="flex-grow">
+                    <p class="text-base leading-relaxed">
+                        Obiettivo primario è quello di occuparsi della cura dei bambini sul territorio al fine di mantenerli il piu' possibile all’interno del proprio contesto sociale e naturale.
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        <ol class="text-base leading-relaxed">
+                            Pertanto il “Progetto Sololo” si articola su due i livelli di intervento:
+                            <li>
+                                Cura e assistenza di un numero quanto piu' elevato possibile di bambini orfani e/o vulnerabili di eta' compresa tra 0 e 12 anni, mantenendoli all’interno delle loro famiglie, o delle famiglie allargate o comunque affidatarie (ad oggi sono circa 300 bambini in 110 famiglie).
+                            </li>
+                            <li>
+                                Realizzazione e gestione di un “villaggio-quartiere” (Obbijtu Children Home), del tutto simile agli altri diciannove che costituiscono l’attuale citta' di Sololo, per l’accoglienza di un limitato numero di bambini per i quali l’assistenza domiciliare si sia dimostrata impossibile SOLO IN POCHI CASI ESTREMI, nei quali risulta impossibile lo sviluppo del bambino nell’ambito famigliare, sara' offerta l’accoglienza – residenziale o solo diurna - all’interno del villaggio Obbijtu Children Home ove e' prevista comunque una famiglia, seppur artificiale.
+                            </li>
+                        </ol>    
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        Il Villaggio, come da tradizione Borana, prevede il padre del villaggio e due case-famiglia per l’accoglienza. La casa-famiglia e' gestita da una madre Borana alla quale vengono affidati fino a dieci bambini da accudire.
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        <ul class="text-base leading-relaxed">
+                            Il Villaggio-Quartiere Obbijtu Children Home, supporta le seguenti funzioni:
+                            <li>
+                                Centro risorse per i problemi dei bambini nell’area di Sololo.
+                            </li>
+                            <li>
+                                Ganglio gestionale del progetto.
+                            </li>
+                            <li>
+                                Ospitalita' diurna per bambini inseriti nel progetto.
+                            </li>
+                            <li>
+                                Ospitalita' per bambini in assoluto stato di abbandono morale e materiale, di cui non sia possibile l’inserimento in famiglia tradizionale.
+                            </li>
+                        </ul>
+                    </p>
+                    <p class="text-base leading-relaxed">
+                        Il Villaggio Quartiere, e' stato realizzato in modo da garantire continuita' ed aderenza agli usi e costumi dei Borana ed e' stato costruito in modo sia di migliorare la resistenza-durata delle opere che offrire migliori condizioni igieniche di vita rispetto alle costruzioni tradizionali,. E’ condizione essenziale del “Progetto Sololo” che le attivita' di costruzione, l’arredamento ed ogni attivita' gestionale debbano prioritariamente favorire la popolazione residente, sia come attivita' d’impresa che di lavoro individuale.
+                    </p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
                 </div>
             </section>
 
@@ -110,7 +429,7 @@
                         <h2>Su di noi</h2>
                     </header>
                     <div class="w-full h-full p-2 mb-4 bg-white"> 
-                        <a href="#"><img class="h-40 mx-auto" src="img/logos/logo.jpg" alt="" /></a>
+                        <a href="index.html"><img class="h-40 mx-auto" src="img/logos/logo.jpg" alt="" /></a>
                     </div>
                     <p>
                         "A força da partilha" (La forza della condivisione) è un’Associazione, nata ufficialmente nel 2003, 
@@ -129,7 +448,7 @@
             <div class="col-4 col-6-medium col-12-small">
                 <section>
                     <header>
-                        <h2>Tempus consequat</h2>
+                        <h2>Contenuti</h2>
                     </header>
                     <ul class="divided">
                         <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -144,7 +463,7 @@
             <div class="col-4 col-6-medium col-12-small">
                 <section>
                     <header>
-                        <h2>Ipsum et phasellus</h2>
+                        <h2>Risorse</h2>
                     </header>
                     <ul class="divided">
                         <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -159,7 +478,7 @@
             <div class="col-4 col-12-medium">
                 <section>
                     <header>
-                        <h2>Vitae tempor lorem</h2>
+                        <h2>Contatti</h2>
                     </header>
                     <ul class="social">
                         <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>

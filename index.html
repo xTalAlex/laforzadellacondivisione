@@ -4,12 +4,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html style="scroll-behavior: smooth;">
 
 	<head>
         <title>A força da partilha</title>
         <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="manifest" href="/site.webmanifest">
 
 <link rel="stylesheet" href="css/app.css" />
 
@@ -35,29 +36,29 @@
     "   
 >
     <ul>
-        <li :class="{ 'current' : page=='index' }"><a href="index.html">Home</a></li>
-        <li :class="{ 'current' : page=='chi-siamo' }"><a href="left-sidebar.html">Chi Siamo</a></li>
-        <li :class="{ 'current' : page=='' }">
-            <a href="#">Dropdown</a>
+        <li :class="{ 'current' : page=='index' || page=='donazioni' }"><a href="index.html">Home</a></li>
+        <li :class="{ 'current' : page=='chi-siamo'|| page=='progetti' || page=='adozioni' || page=='storia' }">
+            <a href="chi-siamo.html">Chi Siamo</a>
             <ul>
-                <li><a href="#">Lorem ipsum dolor</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam dolore nisl</a></li>
                 <li>
-                    <a href="#">Phasellus consequat</a>
+                    <a href="progetti.html">I nostri progetti</a>
                     <ul>
-                        <li><a href="#">Magna phasellus</a></li>
-                        <li><a href="#">Etiam dolore nisl</a></li>
-                        <li><a href="#">Veroeros feugiat</a></li>
-                        <li><a href="#">Nisl sed aliquam</a></li>
-                        <li><a href="#">Dolore adipiscing</a></li>
+                        <li><a href="progetti.html#brasile">Brasile</a></li>
+                        <li><a href="progetti.html#italia">Italia</a></li>
+                        <li><a href="progetti.html#kenya">Kenya</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Veroeros feugiat</a></li>
+                <li>
+                    <a href="adozioni.html">Adozioni</a>
+                    <ul>
+                        <li><a href="adozioni.html#agata-smeralda">Agata Smeralda</a></li>
+                        <li><a href="adozioni.html#mehala">Mehala</a></li>
+                    </ul>
+                </li>
+                <li><a href="storia.html">La nostra storia</a></li>
             </ul>
-        </li>		
-        <li :class="{ 'current' : page=='' }"><a href="left-sidebar.html">Left Sidebar</a></li>
-        <li :class="{ 'current' : page=='' }"><a href="no-sidebar.html">No Sidebar</a></li>
+        </li>
+        <li :class="{ 'current' : page=='note-di-condivisione' }"><a href="note-di-condivisione.html">Note di Condivisione</a></li>
     </ul>
 </nav>
 
@@ -73,7 +74,7 @@
     <div class="row">
         <div class="col-4 col-12-medium">
             <section class="first">
-                <img src="img/Kenya.png" class="icon alt featured" style="object-fit : cover;"/>
+                <img src="img/kenya.png" class="icon alt featured" style="object-fit : cover;"/>
                 <header>
                     <h2>Kenya</h2>
                 </header>
@@ -82,7 +83,7 @@
         </div>
         <div class="col-4 col-12-medium">
             <section class="middle">
-                <img src="img/Brasile.png" class="icon featured" style="object-fit : cover;"/>
+                <img src="img/brasile.png" class="icon featured" style="object-fit : cover;"/>
                 <header>
                     <h2>Brasile</h2>
                 </header>
@@ -91,7 +92,7 @@
         </div>
         <div class="col-4 col-12-medium">
             <section class="last">
-                <img src="img/Italia.png" class="icon alt2 featured" style="object-fit : cover;"/>
+                <img src="img/italia.png" class="icon alt2 featured" style="object-fit : cover;"/>
                 <header>
                     <h2>Italia</h2>
                 </header>
@@ -256,7 +257,7 @@
                         <h2>Su di noi</h2>
                     </header>
                     <div class="w-full h-full p-2 mb-4 bg-white"> 
-                        <a href="#"><img class="h-40 mx-auto" src="img/logos/logo.jpg" alt="" /></a>
+                        <a href="index.html"><img class="h-40 mx-auto" src="img/logos/logo.jpg" alt="" /></a>
                     </div>
                     <p>
                         "A força da partilha" (La forza della condivisione) è un’Associazione, nata ufficialmente nel 2003, 
@@ -275,7 +276,7 @@
             <div class="col-4 col-6-medium col-12-small">
                 <section>
                     <header>
-                        <h2>Tempus consequat</h2>
+                        <h2>Contenuti</h2>
                     </header>
                     <ul class="divided">
                         <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -290,7 +291,7 @@
             <div class="col-4 col-6-medium col-12-small">
                 <section>
                     <header>
-                        <h2>Ipsum et phasellus</h2>
+                        <h2>Risorse</h2>
                     </header>
                     <ul class="divided">
                         <li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
@@ -305,7 +306,7 @@
             <div class="col-4 col-12-medium">
                 <section>
                     <header>
-                        <h2>Vitae tempor lorem</h2>
+                        <h2>Contatti</h2>
                     </header>
                     <ul class="social">
                         <li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>

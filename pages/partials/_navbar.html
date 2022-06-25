@@ -12,28 +12,28 @@
     "   
 >
     <ul>
-        <li :class="{ 'current' : page=='index' }"><a href="index.html">Home</a></li>
-        <li :class="{ 'current' : page=='chi-siamo' }"><a href="left-sidebar.html">Chi Siamo</a></li>
-        <li :class="{ 'current' : page=='' }">
-            <a href="#">Dropdown</a>
+        <li :class="{ 'current' : page=='index' || page=='donazioni' }"><a href="index.html">Home</a></li>
+        <li :class="{ 'current' : page=='chi-siamo'|| page=='progetti' || page=='adozioni' || page=='storia' }">
+            <a href="chi-siamo.html">Chi Siamo</a>
             <ul>
-                <li><a href="#">Lorem ipsum dolor</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam dolore nisl</a></li>
                 <li>
-                    <a href="#">Phasellus consequat</a>
+                    <a href="progetti.html">I nostri progetti</a>
                     <ul>
-                        <li><a href="#">Magna phasellus</a></li>
-                        <li><a href="#">Etiam dolore nisl</a></li>
-                        <li><a href="#">Veroeros feugiat</a></li>
-                        <li><a href="#">Nisl sed aliquam</a></li>
-                        <li><a href="#">Dolore adipiscing</a></li>
+                        <li><a href="progetti.html#brasile">Brasile</a></li>
+                        <li><a href="progetti.html#italia">Italia</a></li>
+                        <li><a href="progetti.html#kenya">Kenya</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Veroeros feugiat</a></li>
+                <li>
+                    <a href="adozioni.html">Adozioni</a>
+                    <ul>
+                        <li><a href="adozioni.html#agata-smeralda">Agata Smeralda</a></li>
+                        <li><a href="adozioni.html#mehala">Mehala</a></li>
+                    </ul>
+                </li>
+                <li><a href="storia.html">La nostra storia</a></li>
             </ul>
-        </li>		
-        <li :class="{ 'current' : page=='' }"><a href="left-sidebar.html">Left Sidebar</a></li>
-        <li :class="{ 'current' : page=='' }"><a href="no-sidebar.html">No Sidebar</a></li>
+        </li>
+        <li :class="{ 'current' : page=='note-di-condivisione' }"><a href="note-di-condivisione.html">Note di Condivisione</a></li>
     </ul>
 </nav>
