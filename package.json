@@ -2,10 +2,13 @@
   "scripts": {
     "build": "npx tailwindcss -i ./css/main.css -o ./css/app.css --minify",
     "watch": "npx tailwindcss -i ./css/main.css -o ./css/app.css --watch",
-    "prod": "html-import-partials ./pages/storia.html -o ./ && html-import-partials ./pages/progetti.html -o ./ && html-import-partials ./pages/chi-siamo.html -o ./ && html-import-partials ./pages/donazioni.html -o ./ && html-import-partials ./pages/index.html -o ./ && html-import-partials ./pages/progetti.html -o ./ && html-import-partials ./pages/adozioni.html -o ./ && npm run build"
+    "compile": "html-includes --src ./pages --dest .",
+    "compile:min": "html-includes --src ./pages --dest . --minify",
+    "compile:watch": "html-includes --src ./pages --dest . --watch",
+    "prod": "npm run compile && npm run build"
   },
-  "devDependencies": {
-    "html-import-partials": "^1.0.1",
+  "dependencies": {
+    "html-includes": "^4.4.1",
     "tailwindcss": "^3.0.24"
   }
 }

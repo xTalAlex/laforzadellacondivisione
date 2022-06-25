@@ -8,7 +8,7 @@
 
 	<head>
         <title>A força da partilha | News </title>
-        <include src='partials/_head.html'/>
+        ${require('./partials/_head.html')}
     </head>
 
     <body class="homepage is-preload">
@@ -16,7 +16,7 @@
 
             <section id="header">
 
-                <include src="partials/_navbar.html"/>
+                ${require('./partials/_navbar.html')}
 
             </section>
 
@@ -26,13 +26,13 @@
                 </div>
             </section>
 
-            <include src="partials/_footer.html"/>
+            ${require('./partials/_footer.html')}
             
         </div>
 
         
     </body>
 
-    <include src="partials/_scripts.html"/>
+    ${require('./partials/_scripts.html')}
 
 </html>

@@ -1,9 +1,8 @@
 module.exports = {
-
-    mode: 'jit',
     
     content: [
-        "./*.html"
+        "./*.html",
+        "./pages/**/*.html"
     ],
 
     theme: {
