@@ -1,11 +1,9 @@
 {
   "scripts": {
-    "build": "npx tailwindcss -i ./css/main.css -o ./css/app.css --minify",
-    "watch": "npx tailwindcss -i ./css/main.css -o ./css/app.css --watch",
-    "compile": "html-includes --src ./pages --dest .",
     "compile:min": "html-includes --src ./pages --dest . --minify",
     "compile:watch": "html-includes --src ./pages --dest . --watch",
-    "prod": "npm run compile && npm run build"
+    "watch": "npx tailwindcss -i ./css/main.css -o ./css/app.css --watch",
+    "build": "html-includes --src ./pages --dest . && npx tailwindcss -i ./css/main.css -o ./css/app.css --minify"
   },
   "dependencies": {
     "html-includes": "^4.4.1",
