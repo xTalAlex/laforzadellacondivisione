@@ -1,0 +1,51 @@
+<!-- left + right wrapped in row -->
+<!-- left content <div class="col-8 col-12-medium"></div>-->
+<div class="col-4 col-12-medium">
+    <section class="box"
+        x-data="{
+            totImg : 18,
+            curIndex : 0,
+            imgPath : 'img/nds/note-di-condivisione1.jpg',
+            stop : false,
+            increment(){
+                this.curIndex++;
+                this.curIndex = this.curIndex % this.totImg;
+                this.imgPath = 'img/nds/note-di-condivisione'+(this.curIndex+1)+'.jpg';
+            }
+        }"
+        x-init="
+            setInterval( () => {
+                if(!stop){
+                    increment();
+                }
+            }, 5000);
+        "
+    >
+        <img alt="logo" class="object-cover mx-auto h-80" :src="imgPath"
+            x-on:mouseover="stop=true"
+            x-on:mouseout="stop=false"
+            x-on:click="increment"
+        />
+        <!-- <a href="#" class="image featured"><img src="img/pic09.jpg" alt="" /></a>
+        <header>
+            <h3>Sed etiam lorem nulla</h3>
+        </header>
+        <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+        <footer>
+            <a href="#" class="button alt">Magna sed taciti</a>
+        </footer> -->
+    </section>
+    <section class="box">
+        <header>
+            <h3>Archivio</h3>
+        </header>
+        <p>Ricordi degli anni passati.</p>
+        <ul class="divided">
+            <li><a href="#">Eventi</a></li>
+            <li><a href="#">Artisti</a></li>
+        </ul>
+        <footer>
+            <a href="#" class="button alt">Clicca per sfogarti</a>
+        </footer>
+    </section>
+</div>
