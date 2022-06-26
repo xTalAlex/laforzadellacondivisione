@@ -14,6 +14,9 @@
             }
         }"
         x-init="
+            curIndex = Math.floor(Math.random() * totImg);
+            imgPath = 'img/nds/note-di-condivisione'+(curIndex+1)+'.jpg';
+            console.log(curIndex);
             setInterval( () => {
                 if(!stop){
                     increment();
@@ -21,7 +24,7 @@
             }, 5000);
         "
     >
-        <img alt="logo" class="object-cover mx-auto h-80" :src="imgPath"
+        <img alt="Galleria" class="object-cover mx-auto h-80" :src="imgPath"
             x-on:mouseover="stop=true"
             x-on:mouseout="stop=false"
             x-on:click="increment"
@@ -41,7 +44,7 @@
         </header>
         <p>Ricordi degli anni passati.</p>
         <ul class="divided">
-            <li><a href="#">Eventi</a></li>
+            <li><a href="#">Locandine</a></li>
             <li><a href="#">Artisti</a></li>
         </ul>
         <footer>
